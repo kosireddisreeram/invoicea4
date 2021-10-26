@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      const data = [
+       
+
+        {
+          position: 1,
+          product: "ctoissant",
+          gewitch: `0.86 kg`,
+          mange: "gfrtg",
+          peris: "gerg",
+          total: "geger",
+        },
+
+        {
+          position: 2,
+          product: "ctoissant",
+          gewitch: `0.86 kg`,
+          mange: "hrthyr",
+          peris: "hyrhtr",
+          total: "hrhy",
+        }, 
+
+        {
+          position: 3,
+          product: "ctoissant",
+          gewitch: `0.86 kg`,
+          mange: "hrthyr",
+          peris: "hyrhtr",
+          total: "hrhy",
+        }, 
+
+        {
+          position: 4,
+          product: "ctoissant",
+          gewitch: `0.86 kg`,
+          mange: "hrthyr",
+          peris: "hyrhtr",
+          total: "hrhy",
+        }, 
+      ];
+
+      window.onload = () => {
+        loadTable(data)
+      }
+
+      const loadTable = (data) => {
+        const tableBody = document.getElementById('tableData');
+        let dataHtml = '';
+
+        // for(let tb of data){
+        //   console.log("tb: ", tb?.product)
+        //   dataHtml += ` <tr>
+        //       <td>${tb?.position}</td>
+        //       <td style="min-width:220px">${tb?.product}</td>
+        //       <td>${tb?.gewitch}</td>
+        //       <td>${tb?.mange}</td>
+        //       <td>${tb?.peris}</td>
+        //       <td>${tb?.total}</td>
+        //     </tr>`;
+        // }
+
+        data.map((tb)=>{
+          dataHtml += ` <tr>
+              <td>${tb?.position}</td>
+              <td style="min-width:220px">${tb?.product}</td>
+              <td>${tb?.gewitch}</td>
+              <td>${tb?.mange}</td>
+              <td>${tb?.peris}</td>
+              <td>${tb?.total}</td>
+            </tr>`;
+        })
+
+        tableBody.innerHTML = dataHtml;
+        };
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page">
+        <div class="header">
+          <img src="one.png" />
+          <div class="right">
+            Hobby<br />
+            Eppendorfer Baum 11<br />
+            20249 Hamburg <br />
+            Deutschland <br />
+            E-mail: hello@myhoddy.com<br />
+            myhoody.com
+          </div>
+        </div>
+        <div class="container-1">
+          Justin-Jamal Peters<br />
+          Dikwai 7<br />
+          25980 Sylt<br />
+          Deutschland
+        </div>
+        <div class="container-2">
+          Rechnungsnummer:123456789123 <br />
+          Rechnungsdatum: 16.oktober 2021
+        </div>
+
+        <table class="content-table" style="width: 100%">
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th style="min-width: 220px">product</th>
+              <th>Gewitcht</th>
+              <th>mange</th>
+              <th>preis</th>
+              <th>total</th>
+            </tr>
+          </thead>
+          <tbody id="tableData"></tbody>
+        </table>
+        <table class="content-table-1" style="width: 100%">
+          <tr>
+            <td>Netto</td>
+            <td>31.57</td>
+          </tr>
+          <tr>
+            <td>MwSt19%</td>
+            <td>7.41</td>
+          </tr>
+          <tr>
+            <td>Summe</td>
+            <td>38.98</td>
+          </tr>
+        </table>
+        <div class="container-3">16.00 2021 17.52 abcd</div>
+        <div class="container-4">
+          Autonomo Gmbh | Alsterblick 10 | 20097 Hamburg| HRB 12345 <br />
+          Ust-ID DE346185237 | St.Nr :12/345/6789 <br />
+          Geschaftsfohrer: James Sutherland, pradeep vallet
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
