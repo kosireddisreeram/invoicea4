@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="index.css" />
     <script>
       const data = [
-       
-
         {
           position: 1,
           product: "ctoissant",
@@ -18,8 +16,7 @@
           peris: "gerg",
           total: "geger",
         },
-
-        {
+     {
           position: 2,
           product: "ctoissant",
           gewitch: `0.86 kg`,
@@ -27,8 +24,7 @@
           peris: "hyrhtr",
           total: "hrhy",
         }, 
-
-        {
+      {
           position: 3,
           product: "ctoissant",
           gewitch: `0.86 kg`,
@@ -36,8 +32,7 @@
           peris: "hyrhtr",
           total: "hrhy",
         }, 
-
-        {
+       {
           position: 4,
           product: "ctoissant",
           gewitch: `0.86 kg`,
@@ -46,28 +41,13 @@
           total: "hrhy",
         }, 
       ];
-
       window.onload = () => {
         loadTable(data)
       }
-
-      const loadTable = (data) => {
+     const loadTable = (data) => {
         const tableBody = document.getElementById('tableData');
         let dataHtml = '';
-
-        // for(let tb of data){
-        //   console.log("tb: ", tb?.product)
-        //   dataHtml += ` <tr>
-        //       <td>${tb?.position}</td>
-        //       <td style="min-width:220px">${tb?.product}</td>
-        //       <td>${tb?.gewitch}</td>
-        //       <td>${tb?.mange}</td>
-        //       <td>${tb?.peris}</td>
-        //       <td>${tb?.total}</td>
-        //     </tr>`;
-        // }
-
-        data.map((tb)=>{
+           data.map((tb)=>{
           dataHtml += ` <tr>
               <td>${tb?.position}</td>
               <td style="min-width:220px">${tb?.product}</td>
@@ -77,8 +57,7 @@
               <td>${tb?.total}</td>
             </tr>`;
         })
-
-        tableBody.innerHTML = dataHtml;
+       tableBody.innerHTML = dataHtml;
         };
     </script>
   </head>
@@ -103,11 +82,10 @@
           Deutschland
         </div>
         <div class="container-2">
-          Rechnungsnummer:123456789123 <br />
-          Rechnungsdatum: 16.oktober 2021
+          Rechnungsnummer: 123456789123 <br />
+          <span style="margin-top: 4px;">Rechnungsdatum: 16.oktober 2021</span>
         </div>
-
-        <table class="content-table" style="width: 100%">
+       <table class="content-table" style="width: 100%">
           <thead>
             <tr>
               <th>Position</th>
@@ -135,8 +113,8 @@
           </tr>
         </table>
         <div class="container-3">16.00 2021 17.52 abcd</div>
-        <div class="container-4">
-          Autonomo Gmbh | Alsterblick 10 | 20097 Hamburg| HRB 12345 <br />
+        <div class="container-4 ">
+          Autonomo Gmbh | Alsterblick 10 | 20097 Hamburg | HRB 12345 <br />
           Ust-ID DE346185237 | St.Nr :12/345/6789 <br />
           Geschaftsfohrer: James Sutherland, pradeep vallet
         </div>
